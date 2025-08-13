@@ -13,7 +13,7 @@ public class Main implements Directions {
   }
 
   /*
-   * Robot must be facing North before this method is called
+   * Robot must be facing North before this method is called.
    */
   private static void writeP(Robot r) {
     for (int i = 0; i < 7; i++) {
