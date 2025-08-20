@@ -10,7 +10,7 @@ class Main {
     // Try using both below to see what the difference is!
 
     // ANSWER:
-    // System.out.print keeps cursor on the same line, System.out.println moves
+    // System.out.print keeps cursor on the same line, System.out.println moves the
     // cursor to beginning of next line
 
     // Throughout the year this year we will need to store information. For that we
@@ -44,29 +44,32 @@ class Main {
 
     // Try doing some math operations with numbers. How can we check to see if the
     // math worked?
-    int calc_num = ((4 + 5) / 2) % 4;
-    System.out.print(calc_num);
+    int calc_num = (2 + 3) / 2 % 6 * 3;
+    System.out.println("calc_num:" + calc_num);
     // Create codes that will print the following:
 
     // Odd integers from 1 to 100, inclusive of both
-    for (int i = 0; i <= 100; i++) {
+    System.out.println("Odds:");
+    for (int i = 1; i <= 100; i += 2) {
       System.out.println(i);
     }
 
     // All multiples of 3 from 1 to 100
+    System.out.println("Multiples of 3:");
     for (int i = 0; i <= 100; i += 3) {
       System.out.println(i);
     }
 
     // Starting at 1000, print on the same line (with a - [hypthen] between each)
     // all of the numbers that end in 0 going down to 0
+    System.out.println("numbers from 1000");
     String nums = "";
-    for (int i = 1000; i > 0; i -= 10) {
+    for (int i = 1000; i >= 0; i -= 10) {
       nums += i;
-      if(i != 10){
+      if (i != 0) {
         nums += "-";
       }
-      
+
     }
     System.out.println(nums);
 
